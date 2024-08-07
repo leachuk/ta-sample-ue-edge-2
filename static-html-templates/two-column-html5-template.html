@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        section {
+            display: flex;
+            width: 100%;
+        }
+        .column-left {
+            width: 70%;
+            padding: 1rem;
+            background-color: #e0e0e0;
+        }
+        .column-right {
+            width: 30%;
+            padding: 1rem;
+            background-color: #d0d0d0;
+        }
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+            }
+            .column-left, .column-right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <main>
+        <section>
+            <div class="column-left">
+                <h2>Left Column (70% width)</h2>
+                <p>This is the main content area.</p>                
+            </div>
+            <div class="column-right">
+                <h2>Right Column (30% width)</h2>
+                <p>This is the sidebar area.</p>            
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
