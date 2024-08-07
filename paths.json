@@ -1,6 +1,5 @@
 {
   "mappings": [
-    "/content/ta-test-site/:/",
-    "/content/ta-test-site/configuration:/.helix/config.json"
+    "/content/ta-test-site/:/"
   ]
 }
