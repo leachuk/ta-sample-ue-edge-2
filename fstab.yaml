@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p138960-e1404971.adobeaemcloud.com/bin/franklin.delivery/leachuk/ta-sample-ue-edge/develop"
+    url: "https://author-p138960-e1404971.adobeaemcloud.com/bin/franklin.delivery/leachuk/ta-sample-ue-edge-2/main"
     type: "markup"
     suffix: ".html"
